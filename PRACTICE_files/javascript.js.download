@@ -1,0 +1,17 @@
+const Car = function (type, mileage) {
+  this.type = type;
+  this.mileage = mileage;
+};
+Car.prototype.calcmilage = function () {
+  console.log(this.type + (2023 - this.mileage));
+};
+var bmw = new Car("petrol", 2332);
+var audi = new Car("petrol", 4232);
+bmw.calcmilage();
+audi.calcmilage();
+var mav = [];
+mav[34] = 232;
+console.log(mav.__proto__);
+
+var q = document.querySelector("h");
+console.log(q);
